@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Auckmageddon</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+<!-- Header -->
+  
+  
+  <div class="row">
+      <div class="large-13 large-centered columns" id="spacer">
+          &nbsp;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-13 large-centered columns" id="header">
+        <h1>Auckmageddon</h1>
+    </div>
+  </div>
+
+  <!-- Main Grid Section -->
+
+  <div class="row">
+    <div class="large-13 columns">
+      <p class="lead">Auckmageddon is currently on hiatus while we figure out just how far detonate can slide into alcoholism.  We'll be back sometime soon, with a shiny new site and horribly deformed livers..  You can <a href="mailto:info@auckmageddon.com">contact us</a> if you need to.</p>
+    </div>
+  </div>
+
+  <!-- End Grid Section -->
+ 
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/earth_400.font.js"></script>
+  <script type="text/javascript">
+    Cufon.set('fontFamily', 'earth');
+    Cufon.replace('h1');
+
+    var spacer = document.getElementById("spacer");
+    spacer.style.height = window.innerHeight / 3 + "px";
+    window.onresize = function() {
+      spacer.style.height = window.innerHeight / 3 + "px";
+    }
+  </script>
+
+</body>
+</html>
